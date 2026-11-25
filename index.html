@@ -167,6 +167,25 @@
         font-size: 0.8rem;
         opacity: 0.7;
       }
+      @media (max-width: 600px) {
+        body {
+          height: auto;
+          min-height: 100vh;
+          min-height: 100svh;
+          align-items: flex-start;
+          padding: calc(env(safe-area-inset-top, 0px) + 16px) 16px
+            calc(env(safe-area-inset-bottom, 0px) + 20px);
+        }
+        main {
+          gap: 20px;
+        }
+        .logo {
+          padding: 12px 16px 10px;
+        }
+        .logo span:not(.petit) {
+          font-size: clamp(2.2rem, 11vw, 3.4rem);
+        }
+      }
     </style>
   </head>
   <body>
@@ -213,7 +232,7 @@
         </a>
       </div>
 
-      <p class="note">Gratuit · Android 8.0+ et iOS 15+</p>
+      <p class="note">Gratuit · Et sans virus j'crois</p>
     </main>
   </body>
 </html>
